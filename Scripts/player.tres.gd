@@ -1,5 +1,6 @@
 extends CharacterBody2D
 @onready var sprite = $AnimatedSprite2D
+@onready var camera_2d = $Camera2D
 
 @export var speed: float = 2200.0
 @export var sprint_speed: float = 3500.0
@@ -17,12 +18,19 @@ var current_jumps = 1
 
 var is_sprinting: bool = false
 
+#zoom variables
+var base_zoom = 1.0
+var sprint_zoom = 0.7
+var zoom_speed = 0.1
+var target_zoom = base_zoom
+
 func _physics_process(delta):
 	var input_dir: Vector2 = input()
 	
 	if input_dir != Vector2.ZERO:
 		if is_sprinting:
 			accelerate(input_dir, sprint_speed)
+			
 		else:
 			accelerate(input_dir, speed)
 		sprite.play("run")
@@ -78,3 +86,5 @@ func jump():
 		
 	if is_on_floor():
 		current_jumps = 1
+		
+

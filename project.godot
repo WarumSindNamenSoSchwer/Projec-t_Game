@@ -19,6 +19,10 @@ config/icon="res://Tileset/icon.svg"
 
 settings/stdout/print_fps=true
 
+[dotnet]
+
+project/assembly_name="Projec-t Game"
+
 [input]
 
 jump={

@@ -14,7 +14,8 @@ accel = 60.0
 friction_sprinting = 150.0
 
 [node name="Camera2D" type="Camera2D" parent="DemoPlayer"]
-texture_filter = 1
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
 drag_horizontal_offset = -0.95
 drag_vertical_offset = -0.75
 drag_left_margin = 0.17
@@ -22,7 +23,7 @@ drag_top_margin = 0.55
 drag_right_margin = 0.43
 drag_bottom_margin = 0.1
 
-[node name="Slade" parent="." instance=ExtResource("2_2643c")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_2643c")]
 position = Vector2(-121, 518)
 scale = Vector2(3, 3)
 speed = 350.0
