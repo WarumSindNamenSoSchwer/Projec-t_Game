@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqlw57hrbsest"]
+
+[ext_resource type="PackedScene" uid="uid://3iyhbqdhqyss" path="res://Scenes/player.tscn" id="2_00kwv"]
+[ext_resource type="PackedScene" uid="uid://dul5asnhvyrjc" path="res://Scenes/CollisionOBJ.tscn" id="2_28rdc"]
+[ext_resource type="PackedScene" uid="uid://ct6tdn8ju4480" path="res://Scenes/J-Son.tscn" id="2_2643c"]
+
+[node name="main" type="Node"]
+
+[node name="DemoPlayer" parent="." instance=ExtResource("2_00kwv")]
+texture_filter = 1
+position = Vector2(211, 442)
+speed = 350.0
+accel = 60.0
+friction_sprinting = 150.0
+
+[node name="Camera2D" type="Camera2D" parent="DemoPlayer"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_2643c")]
+position = Vector2(-121, 518)
+scale = Vector2(3, 3)
+speed = 350.0
+accel = 60.0
+friction_sprinting = 150.0
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_28rdc")]
+position = Vector2(142, 718)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_28rdc")]
+position = Vector2(-2120, 307)
+rotation = 1.5708
+scale = Vector2(0.13, 1)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_28rdc")]
+position = Vector2(3668, 318)
+rotation = 1.5708
+scale = Vector2(0.13, 1)
