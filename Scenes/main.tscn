@@ -12,6 +12,7 @@ position = Vector2(211, 442)
 speed = 350.0
 accel = 60.0
 friction_sprinting = 150.0
+gravity = 100.0
 
 [node name="Camera2D" type="Camera2D" parent="DemoPlayer"]
 texture_filter = 1
