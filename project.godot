@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Projec-t Game"
+<<<<<<< HEAD
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
+=======
+run/main_scene="res://Scenes/main.tscn"
+config/features=PackedStringArray("4.2", "C#", "Mobile")
+>>>>>>> 0614ea3ddf1dc9193baf685f4105bde3ee669e95
 config/icon="res://Tileset/icon.svg"
 
 [debug]
