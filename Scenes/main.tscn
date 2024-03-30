@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://3iyhbqdhqyss" path="res://Scenes/player.tscn" id="2_00kwv"]
 [ext_resource type="PackedScene" uid="uid://dul5asnhvyrjc" path="res://Scenes/CollisionOBJ.tscn" id="2_28rdc"]
-[ext_resource type="PackedScene" uid="uid://ct6tdn8ju4480" path="res://Scenes/J-Son.tscn" id="2_2643c"]
+[ext_resource type="PackedScene" uid="uid://dpw68xoljwp2m" path="res://Scenes/Slade.tscn" id="2_2643c"]
 
 [node name="main" type="Node"]
 
@@ -28,6 +28,7 @@ scale = Vector2(3, 3)
 speed = 350.0
 accel = 60.0
 friction_sprinting = 150.0
+gravity = 100.0
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_28rdc")]
 position = Vector2(142, 718)
