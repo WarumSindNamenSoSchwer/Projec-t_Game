@@ -81,6 +81,7 @@ func jump():
 		if current_jumps < max_jumps:
 			velocity.y = jump_height
 			current_jumps += 1
+			sprite.play("jump")
 	else:
 		velocity.y += gravity
 		
