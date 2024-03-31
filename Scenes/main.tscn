@@ -1,45 +1,41 @@
-[gd_scene load_steps=4 format=3 uid="uid://dqlw57hrbsest"]
+[gd_scene load_steps=5 format=3 uid="uid://qtpaamqcywwu"]
 
-[ext_resource type="PackedScene" uid="uid://3iyhbqdhqyss" path="res://Scenes/player.tscn" id="2_00kwv"]
-[ext_resource type="PackedScene" uid="uid://dul5asnhvyrjc" path="res://Scenes/CollisionOBJ.tscn" id="2_28rdc"]
-[ext_resource type="PackedScene" uid="uid://dpw68xoljwp2m" path="res://Scenes/Slade.tscn" id="2_2643c"]
+[ext_resource type="PackedScene" uid="uid://dpw68xoljwp2m" path="res://Scenes/Slade.tscn" id="1_slpl1"]
+[ext_resource type="PackedScene" uid="uid://dul5asnhvyrjc" path="res://Scenes/CollisionOBJ.tscn" id="2_xfbhe"]
+[ext_resource type="Script" path="res://Scripts/Camera2D.gd" id="3_kk675"]
+
+[sub_resource type="TileSet" id="TileSet_2gtue"]
 
 [node name="main" type="Node"]
 
-[node name="DemoPlayer" parent="." instance=ExtResource("2_00kwv")]
-texture_filter = 1
-position = Vector2(211, 442)
-speed = 350.0
-accel = 60.0
-friction_sprinting = 150.0
-gravity = 100.0
-
-[node name="Camera2D" type="Camera2D" parent="DemoPlayer"]
-texture_filter = 1
-drag_horizontal_offset = -0.95
-drag_vertical_offset = -0.75
-drag_left_margin = 0.17
-drag_top_margin = 0.55
-drag_right_margin = 0.43
-drag_bottom_margin = 0.1
-
-[node name="Slade" parent="." instance=ExtResource("2_2643c")]
-position = Vector2(-121, 518)
+[node name="Slade" parent="." instance=ExtResource("1_slpl1")]
+position = Vector2(-243, 563)
 scale = Vector2(3, 3)
 speed = 350.0
 accel = 60.0
-friction_sprinting = 150.0
-gravity = 100.0
+friction = 100.0
+friction_sprinting = 200.0
+gravity = 101.0
 
-[node name="StaticBody2D" parent="." instance=ExtResource("2_28rdc")]
+[node name="StaticBody2D" parent="." instance=ExtResource("2_xfbhe")]
 position = Vector2(142, 718)
 
-[node name="StaticBody2D2" parent="." instance=ExtResource("2_28rdc")]
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_xfbhe")]
 position = Vector2(-2120, 307)
 rotation = 1.5708
 scale = Vector2(0.13, 1)
 
-[node name="StaticBody2D3" parent="." instance=ExtResource("2_28rdc")]
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_xfbhe")]
 position = Vector2(3668, 318)
 rotation = 1.5708
 scale = Vector2(0.13, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1276, 32)
+zoom = Vector2(0.29, 0.29)
+script = ExtResource("3_kk675")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_2gtue")
+rendering_quadrant_size = 90
+format = 2

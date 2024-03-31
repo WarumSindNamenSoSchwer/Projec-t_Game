@@ -60,7 +60,7 @@ func input() -> Vector2:
 	return input_dir
 
 func sprinting ():
-	if Input.is_action_just_pressed("Sprinting"):
+	if Input.is_action_pressed("Sprinting"):
 		print(1)
 		is_sprinting = true
 	else:
