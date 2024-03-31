@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1lriqy4ofd0j"
-path="res://.godot/imported/J-Son4.png-93f4af71ae8df646fa9252688ad0e3ce.ctex"
+uid="uid://d87bdshk1v1f"
+path="res://.godot/imported/J-Son.png-d37ea7ffada8e200d7db607c7a41e415.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://animation frames/Player/J-Son/J-Son4.png"
-dest_files=["res://.godot/imported/J-Son4.png-93f4af71ae8df646fa9252688ad0e3ce.ctex"]
+source_file="res://Sprites/animation frames/Player/J-Son/J-Son.png"
+dest_files=["res://.godot/imported/J-Son.png-d37ea7ffada8e200d7db607c7a41e415.ctex"]
 
 [params]
 

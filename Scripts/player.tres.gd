@@ -13,36 +13,31 @@ extends CharacterBody2D
 
 @export var gravity: float = 130
 
-@export var max_jumps = 2
-var current_jumps = 1
+@export var max_jumps: int  = 2
+var current_jumps: int = 1
+@export var max_dash: int = 2
+var current_dash: int = 1
 
-var is_sprinting: bool = false
 
 #zoom variables
-var base_zoom = 1.0
-var sprint_zoom = 0.7
-var zoom_speed = 0.1
-var target_zoom = base_zoom
+const BASE_ZOOM = 1.0
+const SPRINT_ZOOM = 0.7
+const ZOOM_SPEED = 0.1
+const TARGET_ZOOM = BASE_ZOOM
 
 func _physics_process(delta):
 	var input_dir: Vector2 = input()
 	
 	if input_dir != Vector2.ZERO:
-		if is_sprinting:
-			accelerate(input_dir, sprint_speed)
-			
-		else:
-			accelerate(input_dir, speed)
+		accelerate(input_dir, speed)
 		sprite.play("run")
 	else:
-		if is_sprinting:
-			add_friction(friction_sprinting)
-		else:
-			add_friction(friction)
+
+		add_friction(friction)
 		sprite.play("default")
 		
 	jump()
-	sprinting()
+	dash(input_dir)
 	
 	player_movement()
 	
@@ -59,12 +54,16 @@ func input() -> Vector2:
 	input_dir = input_dir.normalized()
 	return input_dir
 
-func sprinting ():
-	if Input.is_action_just_pressed("Sprinting"):
+func dash(direction):
+	if Input.is_action_pressed("Sprinting"):
 		print(1)
-		is_sprinting = true
-	else:
-		is_sprinting = false
+		if current_dash < max_dash:
+			velocity = velocity.move_toward(20000 * direction, 4000.0)
+			
+			current_dash += 1
+	if Input.is_action_just_released("Sprinting"):
+		add_friction(friction_sprinting)
+		current_dash = 1
 
 func accelerate(direction, speed):
 	velocity = velocity.move_toward(speed * direction, accel)

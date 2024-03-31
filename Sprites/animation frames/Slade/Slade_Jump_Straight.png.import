@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tak6aplq3d3k"
-path="res://.godot/imported/idle2.png-af1572c5e2b1f3f9e838650fe7868fad.ctex"
+uid="uid://be7qn7o1hjafp"
+path="res://.godot/imported/Slade_Jump_Straight.png-9cac259671162e3976ae434652cc1739.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://animation frames/Player/DemoCHAR/idle2.png"
-dest_files=["res://.godot/imported/idle2.png-af1572c5e2b1f3f9e838650fe7868fad.ctex"]
+source_file="res://Sprites/animation frames/Slade/Slade_Jump_Straight.png"
+dest_files=["res://.godot/imported/Slade_Jump_Straight.png-9cac259671162e3976ae434652cc1739.ctex"]
 
 [params]
 

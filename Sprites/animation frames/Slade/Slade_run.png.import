@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d87bdshk1v1f"
-path="res://.godot/imported/J-Son.png-c15d363333db0fda20dbffc2e9587bf1.ctex"
+uid="uid://l62pu77m0x7p"
+path="res://.godot/imported/Slade_run.png-40fb9a7e0173d36dcd88d22ed949f23d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://animation frames/Player/J-Son/J-Son.png"
-dest_files=["res://.godot/imported/J-Son.png-c15d363333db0fda20dbffc2e9587bf1.ctex"]
+source_file="res://Sprites/animation frames/Slade/Slade_run.png"
+dest_files=["res://.godot/imported/Slade_run.png-40fb9a7e0173d36dcd88d22ed949f23d.ctex"]
 
 [params]
 

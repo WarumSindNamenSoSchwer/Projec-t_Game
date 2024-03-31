@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d10fg1x2n85pe"
-path="res://.godot/imported/Slade_Jump.png-c05c787f9748f51b22c92791ce714a75.ctex"
+uid="uid://e3ipyttbfwpw"
+path="res://.godot/imported/Slade.png-37052eb5cac9ae262a364f91c86ce10e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Slade_Jump.png"
-dest_files=["res://.godot/imported/Slade_Jump.png-c05c787f9748f51b22c92791ce714a75.ctex"]
+source_file="res://Sprites/animation frames/Slade/Slade.png"
+dest_files=["res://.godot/imported/Slade.png-37052eb5cac9ae262a364f91c86ce10e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be7qn7o1hjafp"
-path="res://.godot/imported/Slade_Jump_Straight.png-baf8347fd12825ea21df107d86d6391c.ctex"
+uid="uid://1lriqy4ofd0j"
+path="res://.godot/imported/J-Son4.png-fbb8cba1943c6d7d4985c3fed72120c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Slade_Jump_Straight.png"
-dest_files=["res://.godot/imported/Slade_Jump_Straight.png-baf8347fd12825ea21df107d86d6391c.ctex"]
+source_file="res://Sprites/animation frames/Player/J-Son/J-Son4.png"
+dest_files=["res://.godot/imported/J-Son4.png-fbb8cba1943c6d7d4985c3fed72120c3.ctex"]
 
 [params]
 

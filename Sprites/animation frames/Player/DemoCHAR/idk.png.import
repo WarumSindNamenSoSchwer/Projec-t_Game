@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doio43arf64hg"
-path="res://.godot/imported/Slade_Jump_Up.png-951fb7937b653482905c4b4b34527952.ctex"
+uid="uid://0e74hblm35wd"
+path="res://.godot/imported/idk.png-ffbc57d5743ea8ad5b42854d0e918dbe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Slade_Jump_Up.png"
-dest_files=["res://.godot/imported/Slade_Jump_Up.png-951fb7937b653482905c4b4b34527952.ctex"]
+source_file="res://Sprites/animation frames/Player/DemoCHAR/idk.png"
+dest_files=["res://.godot/imported/idk.png-ffbc57d5743ea8ad5b42854d0e918dbe.ctex"]
 
 [params]
 
