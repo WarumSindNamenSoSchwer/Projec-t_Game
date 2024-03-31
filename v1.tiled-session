@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "C:/Users/Muri/Desktop/Rectangle 1.tsx",
+    "activeFile": "C:/Users/Muri/Desktop/test.tsx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -20,17 +20,25 @@
         "C:/Users/Muri/Desktop/Sprite-0001.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 3
+        },
+        "C:/Users/Muri/Desktop/ai test.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Muri/Desktop/test.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1.5
         }
     },
     "last.imagePath": "C:/Users/Muri/Desktop",
     "map.fixedSize": false,
     "openFiles": [
-        "C:/Users/Muri/Desktop/Screenshot 2024-03-04 204554.tsx",
-        "C:/Users/Muri/Desktop/Rectangle 1.tsx",
-        "C:/Users/Muri/Desktop/Rectangle 1.tsx"
+        "C:/Users/Muri/Desktop/test.tsx"
     ],
     "project": "v1.tiled-project",
     "recentFiles": [
+        "C:/Users/Muri/Desktop/test.tsx",
+        "C:/Users/Muri/Desktop/ai test.tsx",
         "C:/Users/Muri/Desktop/Screenshot 2024-03-04 204554.tsx",
         "C:/Users/Muri/Desktop/Rectangle 1.tsx",
         "C:/Users/Muri/Desktop/Sprite-0001.tsx"

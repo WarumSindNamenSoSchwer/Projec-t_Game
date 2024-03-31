@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baaq171thypnp"
-path="res://.godot/imported/J-Son2.png-18bdf56857523fc6099fb14856ffc076.ctex"
+uid="uid://dijljubkkuube"
+path="res://.godot/imported/Slade_idle.png-48c513f13ff0fd1b052e667d47d8e161.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://animation frames/Player/J-Son/J-Son2.png"
-dest_files=["res://.godot/imported/J-Son2.png-18bdf56857523fc6099fb14856ffc076.ctex"]
+source_file="res://Sprites/animation frames/Slade/Slade_idle.png"
+dest_files=["res://.godot/imported/Slade_idle.png-48c513f13ff0fd1b052e667d47d8e161.ctex"]
 
 [params]
 

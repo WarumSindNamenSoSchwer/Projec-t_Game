@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blerhrflksjoh"
-path="res://.godot/imported/Slade.png-f36133b94a6f3f96f893d48d105616da.ctex"
+uid="uid://tak6aplq3d3k"
+path="res://.godot/imported/idle2.png-3b8f835700a54af70cb6c6d40e3a860d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://animation frames/Slade/Slade.png"
-dest_files=["res://.godot/imported/Slade.png-f36133b94a6f3f96f893d48d105616da.ctex"]
+source_file="res://Sprites/animation frames/Player/DemoCHAR/idle2.png"
+dest_files=["res://.godot/imported/idle2.png-3b8f835700a54af70cb6c6d40e3a860d.ctex"]
 
 [params]
 

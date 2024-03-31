@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://3iyhbqdhqyss"]
 
 [ext_resource type="Script" path="res://Scripts/player.tres.gd" id="1_j4y15"]
-[ext_resource type="Texture2D" uid="uid://r3et5afgc4mi" path="res://animation frames/Player/DemoCHAR/idle.png" id="2_qnysj"]
-[ext_resource type="Texture2D" uid="uid://tak6aplq3d3k" path="res://animation frames/Player/DemoCHAR/idle2.png" id="3_285tr"]
-[ext_resource type="Texture2D" uid="uid://cx7ysuw1t4kd0" path="res://animation frames/Player/DemoCHAR/3.png" id="4_usmnl"]
-[ext_resource type="Texture2D" uid="uid://bm7jjes2l7vdm" path="res://animation frames/Player/DemoCHAR/2.png" id="5_ire27"]
-[ext_resource type="Texture2D" uid="uid://0e74hblm35wd" path="res://animation frames/Player/DemoCHAR/idk.png" id="6_cq1ky"]
+[ext_resource type="Texture2D" uid="uid://r3et5afgc4mi" path="res://Sprites/animation frames/Player/DemoCHAR/idle.png" id="2_qnysj"]
+[ext_resource type="Texture2D" uid="uid://tak6aplq3d3k" path="res://Sprites/animation frames/Player/DemoCHAR/idle2.png" id="3_285tr"]
+[ext_resource type="Texture2D" uid="uid://cx7ysuw1t4kd0" path="res://Sprites/animation frames/Player/DemoCHAR/3.png" id="4_usmnl"]
+[ext_resource type="Texture2D" uid="uid://bm7jjes2l7vdm" path="res://Sprites/animation frames/Player/DemoCHAR/2.png" id="5_ire27"]
+[ext_resource type="Texture2D" uid="uid://0e74hblm35wd" path="res://Sprites/animation frames/Player/DemoCHAR/idk.png" id="6_cq1ky"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mhj1v"]
 animations = [{

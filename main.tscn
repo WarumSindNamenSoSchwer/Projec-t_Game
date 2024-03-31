@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://qtpaamqcywwu"]
+
+[ext_resource type="PackedScene" uid="uid://dpw68xoljwp2m" path="res://Scenes/Slade.tscn" id="2_xjdn1"]
+[ext_resource type="PackedScene" uid="uid://dul5asnhvyrjc" path="res://Scenes/CollisionOBJ.tscn" id="3_sjmrx"]
+[ext_resource type="Script" path="res://Camera2D.gd" id="4_x3rr7"]
+
+[node name="main" type="Node"]
+
+[node name="Slade" parent="." instance=ExtResource("2_xjdn1")]
+position = Vector2(-243, 555)
+scale = Vector2(3, 3)
+speed = 350.0
+accel = 60.0
+friction_sprinting = 150.0
+gravity = 101.0
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_sjmrx")]
+position = Vector2(142, 718)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("3_sjmrx")]
+position = Vector2(-2120, 307)
+rotation = 1.5708
+scale = Vector2(0.13, 1)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("3_sjmrx")]
+position = Vector2(3668, 318)
+rotation = 1.5708
+scale = Vector2(0.13, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1276, 32)
+zoom = Vector2(0.29, 0.29)
+script = ExtResource("4_x3rr7")
