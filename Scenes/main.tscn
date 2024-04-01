@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dul5asnhvyrjc" path="res://Scenes/CollisionOBJ.tscn" id="2_28rdc"]
 [ext_resource type="PackedScene" uid="uid://dpw68xoljwp2m" path="res://Scenes/Slade.tscn" id="2_2643c"]
-[ext_resource type="Script" path="res://Camera2D.gd" id="3_ppqfj"]
+[ext_resource type="Script" path="res://Scripts/Camera2D.gd" id="3_ppqfj"]
 
 [node name="main" type="Node"]
 
