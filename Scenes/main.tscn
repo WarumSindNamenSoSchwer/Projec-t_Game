@@ -14,6 +14,8 @@ accel = 60.0
 friction_sprinting = 150.0
 gravity = 100.0
 
+[node name="slade_cam" type="Camera2D" parent="Slade"]
+
 [node name="StaticBody2D" parent="." instance=ExtResource("2_28rdc")]
 position = Vector2(142, 718)
 
@@ -27,7 +29,7 @@ position = Vector2(3668, 318)
 rotation = 1.5708
 scale = Vector2(0.13, 1)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Map_cam" type="Camera2D" parent="."]
 texture_filter = 1
 position = Vector2(875, -726)
 scale = Vector2(0.999999, 0.999999)

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 @onready var sprite = $AnimatedSprite2D
-@onready var camera_2d = $Camera2D
+@onready var camera_2d = $slade_cam
 
 @export var speed: float = 2200.0
 @export var sprint_speed: float = 3500.0
@@ -15,6 +15,7 @@ extends CharacterBody2D
 
 @export var max_jumps: int  = 2
 var current_jumps: int = 1
+
 @export var max_dash: int = 2
 var current_dash: int = 1
 
@@ -25,7 +26,7 @@ const SPRINT_ZOOM = 0.7
 const ZOOM_SPEED = 0.1
 const TARGET_ZOOM = BASE_ZOOM
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var input_dir: Vector2 = input()
 	
 	if input_dir != Vector2.ZERO:
@@ -56,17 +57,16 @@ func input() -> Vector2:
 
 func dash(direction):
 	if Input.is_action_pressed("Sprinting"):
-		print(1)
 		if current_dash < max_dash:
 			velocity = velocity.move_toward(20000 * direction, 4000.0)
-			
 			current_dash += 1
+			add_friction(friction_sprinting)
 	if Input.is_action_just_released("Sprinting"):
-		add_friction(friction_sprinting)
-		current_dash = 1
+		current_dash = 0
+		add_friction(friction)
 
-func accelerate(direction, speed):
-	velocity = velocity.move_toward(speed * direction, accel)
+func accelerate(direction, accel_speed):
+	velocity = velocity.move_toward(accel_speed * direction, accel)
 
 func add_friction(frictions):
 	velocity = velocity.move_toward(Vector2.ZERO, frictions)
