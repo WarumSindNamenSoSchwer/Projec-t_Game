@@ -11,13 +11,19 @@ config_version=5
 [application]
 
 config/name="Projec-t Game"
-run/main_scene="res://Scenes/main.tscn"
+run/main_scene="res://src/Scenes/main/main.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://Tileset/icon.svg"
 
 [debug]
 
 settings/stdout/print_fps=true
+
+[display]
+
+window/size/initial_position=Vector2i(-230, 0)
+window/size/always_on_top=true
+window/stretch/mode="viewport"
 
 [dotnet]
 

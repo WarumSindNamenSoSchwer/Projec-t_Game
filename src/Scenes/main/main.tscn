@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqlw57hrbsest"]
+
+[ext_resource type="PackedScene" uid="uid://cj5722ni4qdf8" path="res://src/Scenes/map/test_map.tscn" id="1_1kwli"]
+[ext_resource type="PackedScene" uid="uid://dsch5h3c5vt2e" path="res://src/Scenes/characters/Slade.tscn" id="2_2643c"]
+[ext_resource type="Script" path="res://src/Scripts/character_scripts/Label.gd" id="3_5emmi"]
+[ext_resource type="Script" path="res://src/Scripts/cam/Camera2D.gd" id="3_mwfc1"]
+
+[node name="main" type="Node"]
+
+[node name="test_map" parent="." instance=ExtResource("1_1kwli")]
+
+[node name="slade" parent="." instance=ExtResource("2_2643c")]
+position = Vector2(565, 402)
+speed = 400.0
+acceleration = 2500.0
+jump_velocity = -400.0
+
+[node name="slade_cam" type="Camera2D" parent="slade"]
+position = Vector2(-1, 1)
+scale = Vector2(9, 9)
+zoom = Vector2(3, 3)
+
+[node name="Label" type="Label" parent="slade"]
+texture_filter = 1
+offset_left = -52.0
+offset_top = -67.6667
+offset_right = 51.0
+offset_bottom = -44.6667
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_5emmi")
+
+[node name="Map_cam" type="Camera2D" parent="."]
+texture_filter = 1
+position = Vector2(651, -358)
+zoom = Vector2(0.15, 0.15)
+script = ExtResource("3_mwfc1")
